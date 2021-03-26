@@ -1,0 +1,59 @@
+//wil use sass module + bem convention
+.sidebar {
+  margin: 0;
+  padding: 0;
+  max-width: 242px;
+  background: #ffffff;
+
+  border-right: 1px solid #e8ecef;
+}
+
+.sidebar__ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  padding-left: 28px;
+}
+.sidebar__logo {
+  display: flex;
+  justify-content: center;
+  margin-top: 13px;
+  margin-bottom: 11px;
+}
+
+.sidebar__majoritem {
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+  height: 17px;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.0625rem;
+  padding-top: 24px;
+  padding-bottom: 23px;
+  list-style-type: none;
+}
+
+.sidebar__minoritem {
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+  height: 17px;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.0625rem;
+  padding-top: 14px;
+  padding-bottom: 15px;
+  list-style-type: none;
+}
+.sidebar__avatar {
+  margin-right: 18px;
+}
+
+.sidebar__links {
+  text-decoration: none;
+  cursor: pointer;
+}
