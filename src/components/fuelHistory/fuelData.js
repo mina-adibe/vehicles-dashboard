@@ -1,16 +1,19 @@
 import React from "react";
 
 import { Icon, Menu, Table } from "semantic-ui-react";
+
 import edit from "../../assets/images/edit.svg";
 import del from "../../assets/images/delete.svg";
-import styles from "./fuelData.module.scss";
+//import styles from "./fuelData.module.scss";
 
 import { useDispatch, useSelector } from "react-redux";
 
 const FuelData = () => {
   const dispatch = useDispatch();
-  const data = useSelector((state) => state.data);
-  console.log(data);
+  const data = useSelector((state) => state.items);
+  console.log("dataaaa-fuel:", data);
+
+  // delete item
 
   return (
     <>
@@ -27,24 +30,27 @@ const FuelData = () => {
         </Table.Header>
 
         <Table.Body>
-          {data &&
-            data.map((item) => (
-              <Table.Row key={item.id}>
-                <Table.Cell>{item.name} </Table.Cell>
-                <Table.Cell>{item.time} </Table.Cell>
-                <Table.Cell>{item.Total_km}</Table.Cell>
-                <Table.Cell>{item.volume}</Table.Cell>
-                <Table.Cell>{item.cost}</Table.Cell>
-                <Table.Cell>
-                  <i>
-                    <img alt="edit item" src={edit} />{" "}
-                  </i>
-                  <i>
-                    <img alt="delete item" src={del} />
-                  </i>
-                </Table.Cell>
-              </Table.Row>
-            ))}
+          {data.map((item) => (
+            <Table.Row key={item.id}>
+              <Table.Cell>{item.name} </Table.Cell>
+              <Table.Cell>{item.time} </Table.Cell>
+              <Table.Cell>{item.Total_km}</Table.Cell>
+              <Table.Cell>{item.volume}</Table.Cell>
+              <Table.Cell>{item.cost}</Table.Cell>
+              <Table.Cell>
+                <i>
+                  <img alt="edit item" src={edit} />{" "}
+                </i>
+                <i
+                  onClick={() =>
+                    dispatch({ type: "DELETE_ITEM", payload: item.id })
+                  }
+                >
+                  <img alt="delete item" src={del} />
+                </i>
+              </Table.Cell>
+            </Table.Row>
+          ))}
         </Table.Body>
 
         <Table.Footer>

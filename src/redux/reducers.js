@@ -1,26 +1,18 @@
-const itemReducer = (state = [], action) => {
+const initialState = { items: [] };
+
+const itemReducer = (state = initialState, action) => {
   switch (action.type) {
     //fetch data async
     case "FETCH_POSTS_SUCCESS":
-      return action.payload.items;
+      console.log("????", action.payload.items);
+      return { ...state, items: action.payload.items.data };
 
     //delete item
     case "DELETE_ITEM":
-      return state.filter((post) => post.id !== action.id);
+      const arr = state.items.filter((post) => post.id !== action.payload);
+      //console.log(state.ite, action.payload);
+      return { ...state, items: [...arr] };
 
-    //edit user
-    case "EDIT_ITEM":
-      return state.map((item) => {
-        if (item.id === action.id) {
-          return {
-            ...item,
-            username: action.data.username,
-            phonenumber: action.data.phonenumber,
-            country: action.data.country,
-            email: action.data.email,
-          };
-        } else return item;
-      });
     default:
       return state;
   }

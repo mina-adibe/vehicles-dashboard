@@ -8,6 +8,15 @@ export function editItem(id) {
 }
 
 export function deleteUser(id) {
+  axios
+    .delete(`http://localhost:3000/posts/${id}`)
+    .then((resp) => {
+      console.log(resp.data);
+    })
+    .catch((error) => {
+      console.log(error);
+    });
+
   return {
     type: "DELETE_ITEM",
     payload: id,
@@ -26,7 +35,9 @@ const fetchPostsSuccess = (items) => ({
 export const fetchPosts = () => {
   return async (dispatch) => {
     try {
-      let items = await axios.get("http://localhost:3000/posts");
+      const items = await axios.get("http://localhost:3000/posts");
+      // const zizo = await items.data;
+      console.log("data-action :", items.data);
 
       dispatch(fetchPostsSuccess(items)); //store first five posts
     } catch (e) {
