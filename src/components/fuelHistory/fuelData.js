@@ -5,6 +5,7 @@ import { Icon, Menu, Table } from "semantic-ui-react";
 import edit from "../../assets/images/edit.svg";
 import del from "../../assets/images/delete.svg";
 //import styles from "./fuelData.module.scss";
+import { deleteUser } from "../../redux/action";
 
 import { useDispatch, useSelector } from "react-redux";
 
@@ -41,11 +42,7 @@ const FuelData = () => {
                 <i>
                   <img alt="edit item" src={edit} />{" "}
                 </i>
-                <i
-                  onClick={() =>
-                    dispatch({ type: "DELETE_ITEM", payload: item.id })
-                  }
-                >
+                <i onClick={() => dispatch(deleteUser(item.id))}>
                   <img alt="delete item" src={del} />
                 </i>
               </Table.Cell>
