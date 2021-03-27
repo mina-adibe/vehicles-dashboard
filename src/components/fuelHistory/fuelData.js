@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from "react";
-import styles from "./fuelData.module.scss";
 import axios from "axios";
+import { Icon, Menu, Table } from "semantic-ui-react";
+import edit from "../../assets/images/edit.svg";
+import del from "../../assets/images/delete.svg";
+//import styles from "./fuelData.module.scss";
 
 const FuelData = () => {
   const [data, setData] = useState([]);
@@ -14,7 +17,55 @@ const FuelData = () => {
 
   return (
     <>
-      <table className={styles.blueTable}>
+      <Table fixed>
+        <Table.Header>
+          <Table.Row>
+            <Table.HeaderCell>Vehicle</Table.HeaderCell>
+            <Table.HeaderCell>Time</Table.HeaderCell>
+            <Table.HeaderCell>Total Km</Table.HeaderCell>
+            <Table.HeaderCell>Volume</Table.HeaderCell>
+            <Table.HeaderCell>Cost</Table.HeaderCell>
+            <Table.HeaderCell>Action</Table.HeaderCell>
+          </Table.Row>
+        </Table.Header>
+
+        <Table.Body>
+          {data.map((item) => (
+            <Table.Row>
+              <Table.Cell>{item.name} </Table.Cell>
+              <Table.Cell>{item.time} </Table.Cell>
+              <Table.Cell>{item.Total_km}</Table.Cell>
+              <Table.Cell>{item.volume}</Table.Cell>
+              <Table.Cell>{item.cost}</Table.Cell>
+              <Table.Cell>
+                <img alt="edit item" src={edit} /> {"         "}
+                <img alt="delete item" src={del} />
+              </Table.Cell>
+            </Table.Row>
+          ))}
+        </Table.Body>
+
+        <Table.Footer>
+          <Table.Row>
+            <Table.HeaderCell colSpan="6">
+              <Menu floated="right" pagination>
+                <Menu.Item as="a" icon>
+                  <Icon name="chevron left" />
+                </Menu.Item>
+                <Menu.Item as="a">1</Menu.Item>
+                <Menu.Item as="a">2</Menu.Item>
+                <Menu.Item as="a">3</Menu.Item>
+                <Menu.Item as="a">4</Menu.Item>
+                <Menu.Item as="a" icon>
+                  <Icon name="chevron right" />
+                </Menu.Item>
+              </Menu>
+            </Table.HeaderCell>
+          </Table.Row>
+        </Table.Footer>
+      </Table>
+
+      {/* <table className={styles.blueTable}>
         <thead>
           <tr>
             <th>head2</th>
@@ -107,7 +158,7 @@ const FuelData = () => {
             <td>cell6_10</td>
           </tr>
         </tbody>
-      </table>
+      </table> */}
     </>
   );
 };
