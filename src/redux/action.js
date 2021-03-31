@@ -1,13 +1,35 @@
 import axios from "axios";
 
-export function editItem(id) {
+//edit function
+export function editItem(items, id) {
+  axios
+
+    .put(`http://localhost:3000/posts/${id}`, {
+      name: items.vehicle,
+      time: items.startdate,
+      Total_km: items.odometer,
+      volume: items.volume,
+      cost: items.fueltype,
+    })
+    .then((resp) => {
+      console.log(resp.data);
+    })
+    .catch((error) => {
+      console.log(error);
+    });
+
+  console.log("redux ???????", items, id);
+
   return {
     type: "EDIT_ITEM",
-    payload: id,
+    payload: items,
+    id: id,
   };
 }
 
+// delete function
 export function deleteUser(id) {
+  console.log(id);
   axios
     .delete(`http://localhost:3000/posts/${id}`)
     .then((resp) => {
