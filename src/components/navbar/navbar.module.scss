@@ -1,0 +1,25 @@
+.maindiv {
+  background: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 21px;
+  padding-bottom: 21px;
+  padding-left: 72px;
+  padding-right: 28px;
+  border: 1px solid #e8ecef;
+}
+.h1 {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 24px;
+  color: #252631;
+}
+.avatar {
+  border-radius: 50%;
+  border: 5px solid #e8ecef;
+  width: 36px;
+  height: 36px;
+}
