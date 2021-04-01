@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 242px auto;
+  grid-template-rows: auto auto;
+  gap: 0px 0px;
+  grid-template-areas:
+    "slidbar navbar"
+    "slidbar body";
+}
+
+.slidbar {
+  grid-area: slidbar;
+}
+
+.navbar {
+  grid-area: navbar;
+}
+
+.body {
+  grid-area: body;
+}
