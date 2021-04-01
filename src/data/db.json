@@ -3,12 +3,12 @@
     {
       "id": 1,
       "date": "03-Jul-2020",
-      "name": "momo1",
-      "time": "momo2",
-      "status": "Out Of service",
-      "Total_km": "momo3",
-      "volume": "momo4",
-      "cost": "momo5"
+      "name": "Pontiac",
+      "time": "11:50 AM",
+      "status": "Active",
+      "Total_km": "24",
+      "volume": "3",
+      "cost": "457047.819"
       
     },
     {
@@ -16,7 +16,7 @@
       "date": "03-Jul-2020",
       "name": "Pontiac",
       "time": "11:50 AM",
-      "status": "In shop",
+      "status": "Active",
       "Total_km": "24",
       "volume": "3",
       "cost": "457047.819"
