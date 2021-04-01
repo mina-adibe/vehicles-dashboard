@@ -3,11 +3,9 @@ import * as yup from "yup";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { useForm } from "react-hook-form";
 import { useDispatch } from "react-redux";
-
 import { editItem } from "../../redux/action";
 import styled from "styled-components";
 import styles from "./edit.module.scss";
-
 import Modal from "react-modal";
 
 Modal.setAppElement("#root");
@@ -53,7 +51,7 @@ const Edit = (props) => {
 
   const Formn = styled(Modal)`
     background: #ffffff;
-    border: 1px solid #e8ecef;
+    // border: 0.3px solid #e8ecef;
     border-radius: 4px;
     width: 620px;
     height: 504px;
@@ -128,8 +126,8 @@ const Edit = (props) => {
               {errors.fueltype && <p>{errors.fueltype.message}</p>}
             </div>
           </div>
-          <div>
-            <button className={styles.button} onClick={props.exit}>
+          <div className={styles.footer}>
+            <button className={styles.button_cancel} onClick={props.exit}>
               cancel
             </button>
             <button type="submit">save</button>
