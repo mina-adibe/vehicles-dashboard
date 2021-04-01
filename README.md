@@ -1,4 +1,4 @@
-# istalation 
+# installation 
 npm install 
 
 ## run app
