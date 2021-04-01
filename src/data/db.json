@@ -1,94 +1,108 @@
 {
-  "posts": [{
-    "id" : 1,
-    "date": "17-Sep-2019",
-    "name": "Ford",
-    "active": true,
-    "time": "3:09 AM",
-    "Total_km": 2,
-    "volume": 85,
-    "cost": 492546.161
-  }, {
-    "id" : 2,
-    "date": "27-Mar-2019",
-    "name": "Pontiac",
-    "active": false,
-    "time": "11:50 AM",
-    "Total_km": 24,
-    "volume": 3,
-    "cost": 457047.819
-  }, {
-    "id" : 3,
-    "date": "03-Jul-2020",
-    "name": "Chevrolet",
-    "active": false,
-    "time": "11:21 PM",
-    "Total_km": 91,
-    "volume": 147,
-    "cost": 22626.132
-  }, {
-    "id" : 4,
-    "date": "15-Dec-2020",
-    "name": "Chevrolet",
-    "active": true,
-    "time": "10:44 PM",
-    "Total_km": 42,
-    "volume": 12,
-    "cost": 929302.919
-  }, {
-    "id" : 5,
-    "date": "05-Aug-2019",
-    "name": "Chevrolet",
-    "active": true,
-    "time": "11:19 AM",
-    "Total_km": 48,
-    "volume": 110,
-    "cost": 409303.829
-  }, {
-    "id" : 6,
-    "date": "11-Aug-2019",
-    "name": "Chevrolet",
-    "active": false,
-    "time": "2:42 PM",
-    "Total_km": 57,
-    "volume": 45,
-    "cost": 274560.882
-  }, {
-    "id" : 7,
-    "date": "05-Sep-2019",
-    "name": "Saturn",
-    "active": true,
-    "time": "8:26 AM",
-    "Total_km": 12,
-    "volume": 84,
-    "cost": 706989.752
-  }, {
-    "id" : 8,
-    "date": "08-Feb-2021",
-    "name": "Subaru",
-    "active": true,
-    "time": "5:29 PM",
-    "Total_km": 59,
-    "volume": 47,
-    "cost": 823704.0
-  }, {
-    "id" : 9,
-    "date": "08-Jun-2020",
-    "name": "Citroën",
-    "active": true,
-    "time": "9:16 AM",
-    "Total_km": 38,
-    "volume": 89,
-    "cost": 98016.877
-  }, {
-    "id" : 10,
-    "date": "22-Apr-2019",
-    "name": "Honda",
-    "active": true,
-    "time": "10:57 PM",
-    "Total_km": 19,
-    "volume": 48,
-    "cost": 59409.431
-  }]
-  
+  "posts": [
+    {
+      "id": 1,
+      "date": "03-Jul-2020",
+      "name": "momo1",
+      "time": "momo2",
+      "status": "Out Of service",
+      "Total_km": "momo3",
+      "volume": "momo4",
+      "cost": "momo5"
+      
+    },
+    {
+      "id": 2,
+      "date": "03-Jul-2020",
+      "name": "Pontiac",
+      "time": "11:50 AM",
+      "status": "In shop",
+      "Total_km": "24",
+      "volume": "3",
+      "cost": "457047.819"
+     
+    },
+    {
+      "id": 3,
+      "date": "03-Jul-2020",
+      "name": "Chevrolet",
+      "status": "Out Of service",
+      "time": "11:21 PM",
+      "Total_km": 91,
+      "volume": 147,
+      "cost": 22626.132
+    },
+    {
+      "id": 4,
+      "date": "15-Dec-2020",
+      "name": "Chevrolet",
+      "status": "In shop",
+      "time": "10:44 PM",
+      "Total_km": 42,
+      "volume": 12,
+      "cost": 929302.919
+    },
+    {
+      "id": 5,
+      "date": "05-Aug-2019",
+      "name": "Chevrolet",
+      "status": "In shop",
+      "time": "11:19 AM",
+      "Total_km": 48,
+      "volume": 110,
+      "cost": 409303.829
+    },
+    {
+      "id": 6,
+      "date": "11-Aug-2019",
+      "name": "Chevrolet",
+      "status": "In shop",
+      "time": "2:42 PM",
+      "Total_km": 57,
+      "volume": 45,
+      "cost": 274560.882
+    },
+    {
+      "id": 7,
+      "date": "08-Jun-2020",
+      "name": "Saturnxxx",
+      "time": "8:26 AM",
+      "status": "In shop",
+      "Total_km": "12",
+      "volume": "84",
+      "cost": "706989.752"
+     
+    },
+    {
+      "id": 8,
+      "date": "08-Feb-2021",
+      "name": "Subaru",
+      "status": "Out Of service",
+      "time": "5:29 PM",
+      "Total_km": 59,
+      "volume": 47,
+      "cost": 823704
+    },
+    {
+      "id": 9,
+      "date": "08-Jun-2020",
+      "name": "Citroën",
+      "status": "Out Of service",
+      "time": "9:16 AM",
+      "Total_km": 38,
+      "volume": 89,
+      "cost": 98016.877
+    },
+    {
+      "id": 10,
+      "date": "08-Jun-2020",
+      "name": "Hondzzzzzzzat",
+      "status": "Out Of service",
+      "time": "10:57 PM",
+      "Total_km": "19",
+      "volume": "48",
+      "cost": "59409.431"
+      
+    }
+  ]
 }
