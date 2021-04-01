@@ -8,7 +8,6 @@ const itemReducer = (state = initialState, action) => {
 
     //delete item
     case "DELETE_ITEM":
-      console.log("????", action);
       const arr = state.items.filter((post) => post.id !== action.payload);
       return { ...state, items: [...arr] };
 

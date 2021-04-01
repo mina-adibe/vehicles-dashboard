@@ -18,8 +18,6 @@ export function editItem(items, id) {
       console.log(error);
     });
 
-  console.log("redux ???????", items, id);
-
   return {
     type: "EDIT_ITEM",
     payload: items,
@@ -58,8 +56,6 @@ export const fetchPosts = () => {
   return async (dispatch) => {
     try {
       const items = await axios.get("http://localhost:3000/posts");
-      // const zizo = await items.data;
-      console.log("data-action :", items.data);
 
       dispatch(fetchPostsSuccess(items)); //store first five posts
     } catch (e) {
