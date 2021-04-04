@@ -1,15 +1,9 @@
 import React, { useState } from "react";
 import del from "../../assets/images/delete.svg";
 import editimg from "../../assets/images/edit.svg";
-
 import "./fuelData.scss";
 import { deleteUser } from "../../redux/action";
-
 import { useDispatch, useSelector } from "react-redux";
-//import { connect } from "react-redux";
-//import { bindActionCreators } from "redux";
-//import { show } from "redux-modal";
-
 import Edit from "../edit/edit";
 
 const FuelData = () => {
@@ -100,7 +94,7 @@ const FuelData = () => {
             ))}
           </tbody>
         </table>
-        {/* -------------------------- */}
+        {/* -------------- modal------------ */}
         <div>
           <Edit show={showModal} exit={handleShowModal} info={item} />
         </div>
