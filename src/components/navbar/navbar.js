@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./navbar.module.scss";
 import logo from "../../assets/images/navbar_avatar.png";
 
+//for review
 const Navbar = () => {
   return (
     <>

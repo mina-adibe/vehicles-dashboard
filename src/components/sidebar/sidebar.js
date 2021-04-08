@@ -1,5 +1,4 @@
 import React from "react";
-
 import People from "../../assets/images/People_icon.svg";
 import Report from "../../assets/images/Report_icon.svg";
 import Vehicles from "../../assets/images/Vehicles_icon.svg";
@@ -7,6 +6,7 @@ import logo from "../../assets/images/logo.png";
 
 import styles from "./sidebar.module.scss";
 
+//for review
 const Sidebar = () => {
   const borderStyle = {
     borderLeftColor: "#4D7CFE",

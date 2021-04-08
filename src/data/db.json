@@ -1,28 +1,6 @@
 {
   "posts": [
     {
-      "id": 1,
-      "date": "03-Jul-2020",
-      "name": "Pontiac",
-      "time": "11:50 AM",
-      "status": "Active",
-      "Total_km": "24",
-      "volume": "3",
-      "cost": "457047.819"
-      
-    },
-    {
-      "id": 2,
-      "date": "03-Jul-2020",
-      "name": "Pontiac",
-      "time": "11:50 AM",
-      "status": "Active",
-      "Total_km": "24",
-      "volume": "3",
-      "cost": "457047.819"
-     
-    },
-    {
       "id": 3,
       "date": "03-Jul-2020",
       "name": "Chevrolet",
@@ -71,7 +49,6 @@
       "Total_km": "12",
       "volume": "84",
       "cost": "706989.752"
-     
     },
     {
       "id": 8,
@@ -102,7 +79,6 @@
       "Total_km": "19",
       "volume": "48",
       "cost": "59409.431"
-      
     }
   ]
 }
