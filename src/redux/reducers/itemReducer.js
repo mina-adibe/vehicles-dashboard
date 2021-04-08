@@ -1,5 +1,6 @@
 const initialState = { items: [] };
 
+//for review
 const itemReducer = (state = initialState, action) => {
   switch (action.type) {
     //fetch data async

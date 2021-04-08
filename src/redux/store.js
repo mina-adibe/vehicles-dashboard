@@ -3,6 +3,7 @@ import thunk from "redux-thunk";
 import rootReduces from "./reducers/index";
 import { createLogger } from "redux-logger";
 
+//for review
 //code to setup redux dev tools
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 const logger = createLogger();

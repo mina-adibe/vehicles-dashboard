@@ -6,6 +6,7 @@ import { deleteUser } from "../../redux/action";
 import { useDispatch, useSelector } from "react-redux";
 import Edit from "../edit/edit";
 
+//for review
 const FuelData = () => {
   const dispatch = useDispatch();
   const data = useSelector((state) => state.itemReducer.items);
